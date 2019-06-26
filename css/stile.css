@@ -1,0 +1,52 @@
+ body {
+    height: 100%;
+	width: 100%;
+	background: radial-gradient(at top, #FEFFFF, #A7CECC);	
+   }
+   
+     IMG.fig {
+    float: right; /* обтекание картинки по левому краю */
+    padding-left: 10px; /* отступ слева */
+    padding-bottom: 10px; /* отступ снизу */
+
+   }
+   
+   .imgCenter {text-align:center;}
+   
+    #pic {
+    float: left; /* обтекание картинки текстом */
+	border: 2px solid #128ba1;
+	padding: 5px;
+   }
+   
+   #text {
+    margin-left: 400px; /* отступ от левого края */
+	font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    }
+   
+    h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   } 
+   
+   p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   }
+
+   #title{
+  background: crimson;
+  box-shadow: 0 -150px 70px -120px teal inset,
+              0 -220px 70px -120px yellowgreen inset,
+              0 -280px 70px -120px gold inset;
+  animation: background 10s infinite alternate;
+  padding:20px;
+}
+
+@keyframes background {
+  50% {
+    background: darkviolet;
+    box-shadow: 0 -140px 70px -120px mediumorchid inset,
+                0 -210px 70px -120px teal inset,
+                0 -280px 70px -120px plum inset;
+  }
+}
+
