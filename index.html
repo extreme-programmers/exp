@@ -6,7 +6,6 @@
   <title>Extreme programmers!</title>
      <link rel="stylesheet" type="text/css" href="css/stile.css">
      <link rel="shortcut icon" href="D:/exp/image/favicon.ico" />
-	 <script src="D:/exp/script/script.js"></script>
   </head>
  
   
@@ -18,23 +17,69 @@
          <h1>Здравствуйте!</h1>
          <h2>Вы находитесь на сайте команды Экстремальные программисты!</h2>
      </div>
-     <div>
+ 
+ 
+	 
+	 <div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="image/Sv00036.jpg" style="width:30%">
+		  <div class="text">Старт!</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="image/Sv00098.jpg" style="width:30%">
+		  <div class="text">Выдали задание.</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 4</div>
+		  <img src="image/2.jpg" style="width:30%">
+		  <div class="text">Наша аудитория.</div>
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="image/medium2.jpg" style="width:30%">
+		  <div class="text">Работа над проектом.</div>
+		</div>
+    </div>
+		<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    <div>
          <p>Команда была создана в процессе подбора команд на хакатон всероссийского конкурса Цифровой прорыв Надей Галлини.</p>
          <p>Члены команды: Александр Якушев, Жека Чернышов, Арам Караханян, Алексей Куракин.</p>
          <p>Команда Экстремальные программисты вышла в финал конкурса Цифровой прорыв и будет выступать в Казани в сентябре 2019 г.</p>
      </div>
-     <div id="pic">
-         <img src="image/Sv00036.jpg" alt="lorem">
-     </div>
-     <div id="pic">
-         <img src="image/Sv00098.jpg" alt="lorem">
-     </div>
-     <div id="pic">
-         <img src="image/2.jpg" alt="lorem">
-     </div>
-     <div id="pic">
-         <img src="image/medium2.jpg" alt="lorem">
-     </div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
  </body>
  
 </html>
